@@ -14,7 +14,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-watercolor-image"
-          src="/brand/watercolor-pad.png"
+          src="/brand/synechron-watercolor-header.png"
           alt=""
         />
         <SiteNav />
@@ -60,11 +60,6 @@ export default function HomePage() {
             <JobSection key={job.id} job={job} />
           ))}
         </div>
-      </div>
-
-      <div className="orbit-break" aria-hidden>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/watercolor-orbit.png" alt="" />
       </div>
 
       <div className="report">
