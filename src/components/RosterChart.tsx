@@ -37,6 +37,7 @@ function Box({
       </span>
       <span className="org-name">{bot.name}</span>
       <span className="org-blurb">{bot.blurb}</span>
+      {bot.tools ? <span className="org-tools">{bot.tools}</span> : null}
     </>
   );
 
@@ -59,11 +60,10 @@ export function RosterChart() {
 
   return (
     <section id="roster" className="roster">
-      <h2>A background team for every sales rep</h2>
+      <h2>A background team for every Synechron seller</h2>
       <p className="section-lede">
-        The work itself is the trigger. A call starts, an email lands, or an
-        account enters the list — and the right agent picks it up. They keep
-        working after the laptop closes. Drafts stay drafts until the rep sends.
+        Each agent has its own cloud computer. A call, a question, or a new
+        account starts the work. Drafts stay drafts until you send.
       </p>
 
       <div className="org" role="tree">

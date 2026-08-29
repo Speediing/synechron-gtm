@@ -23,7 +23,7 @@ export function ArtifactCard({ artifact }: { artifact: Artifact }) {
     case "packet":
       return (
         <div className="art art-doc">
-          <p className="art-kicker">Champion packet</p>
+          <p className="art-kicker">Packet</p>
           <h3 className="art-title">{artifact.title}</h3>
           {artifact.fields.map((field) => (
             <div key={field.label} className="art-block">

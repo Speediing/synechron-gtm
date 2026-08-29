@@ -4,8 +4,9 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Grok Bot for Datadog sales",
-  description: "Grok Bot for Datadog sales",
+  metadataBase: new URL("https://synechron-grokbot.vercel.app"),
+  title: "Synechron x SpaceXAI",
+  description: "A customer leave-behind for Synechron.",
   robots: {
     index: false,
     follow: false,

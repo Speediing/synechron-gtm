@@ -140,7 +140,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
           </div>
           <footer>
             <span className="story-wave">||||||||||||</span>
-            Granola is listening
+            Notes are open
           </footer>
         </div>
       );
@@ -153,7 +153,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
           </header>
           <blockquote>
             <strong>{visual.speaker}</strong>
-            “{visual.quote}”
+            {visual.quote}
           </blockquote>
           <footer>
             {visual.signals.map((signal) => (
@@ -182,19 +182,16 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
         <div className="story-ui story-email-ui" aria-hidden>
           <header className="story-ui-bar">
             <strong>Inbox</strong>
-            <span>5:27 AM</span>
+            <span>New</span>
           </header>
           <div className="story-email-body">
-            <span className="story-avatar">JH</span>
+            <span className="story-avatar">CC</span>
             <p>
               <strong>{visual.sender}</strong>
               <small>{visual.subject}</small>
             </p>
           </div>
-          <footer>
-            <strong>{visual.questions}</strong>
-            questions need answers
-          </footer>
+          <footer>Open question</footer>
         </div>
       );
     case "answers-found":
@@ -260,7 +257,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
       return (
         <div className="story-ui story-why-ui" aria-hidden>
           <header className="story-ui-bar">
-            <strong>Account hypothesis</strong>
+            <strong>Account notes</strong>
             <span>Built from evidence</span>
           </header>
           <ol>
@@ -284,7 +281,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
               <p key={channel}>
                 <span>{index + 1}</span>
                 <strong>{channel}</strong>
-                <small>Personalized</small>
+                <small>Draft</small>
               </p>
             ))}
           </div>

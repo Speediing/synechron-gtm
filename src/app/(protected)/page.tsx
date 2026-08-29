@@ -1,7 +1,9 @@
 import { CompareTable } from "@/components/CompareTable";
+import { HeroDemo } from "@/components/HeroDemo";
 import { HeroTelemetry } from "@/components/HeroTelemetry";
 import { JobSection } from "@/components/JobSection";
 import { QuoteWall } from "@/components/QuoteWall";
+import { RosterChart } from "@/components/RosterChart";
 import { SiteNav } from "@/components/SiteNav";
 import { JOBS } from "@/data/jobs";
 
@@ -22,25 +24,16 @@ export default function HomePage() {
         <div className="report-hero">
           <HeroTelemetry />
           <section className="hero">
-            <div>
-              <p className="eyebrow">A proactive agent for every Datadog rep</p>
-              <h1>The agents that work while your reps sell.</h1>
-              <p className="hero-intro">
-                Grok Bot listens to calls, watches the inbox, and researches
-                accounts in the background. Work triggers it — not another
-                prompt.
-              </p>
-            </div>
+            <HeroDemo />
           </section>
 
           <section className="usecase-framing">
-            <p className="eyebrow">Three sample use cases</p>
+            <p className="eyebrow">Three sample workflows</p>
             <h2>
-              Grok Bot gives every seller their own fleet of always-available
-              agent teammates. Anything your sellers do today can be done
-              through Grok Bot.
+              Grok Bot gives every seller a team of agents. Each agent has its
+              own cloud computer.
             </h2>
-            <p>These are three examples from millions — not the boundary.</p>
+            <p>These are three sample workflows, not the limit.</p>
           </section>
 
           <div className="metric-grid">
@@ -59,6 +52,8 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+
+        <RosterChart />
 
         <div id="jobs">
           {JOBS.map((job) => (
@@ -79,14 +74,14 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <div>
-          <p className="footer-title">Cursor for Datadog</p>
-          <p>Grok Bot for Datadog sales</p>
+          <p className="footer-title">Cursor for Synechron</p>
+          <p>Grok Bot for Synechron sales</p>
         </div>
         <address className="footer-contact">
-          <p>Datadog&apos;s existing Cursor contact</p>
-          <strong>Madeline Ingleby</strong>
-          <a href="mailto:madeline.ingleby@cursor.com">
-            madeline.ingleby@cursor.com
+          <p>Your Cursor contact</p>
+          <strong>Sean Middleton</strong>
+          <a href="mailto:sean.middleton@cursor.com">
+            sean.middleton@cursor.com
           </a>
         </address>
       </footer>
